@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 8080;
 
-const db = require("./models");
+const db = require("./models/workout");
 
 
 const app = express();
@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://jamierachael:Cheeseme1@ds
 
 // Requiring our routes
 
-app.use("/api", require("./routes/api-routes.js"));
+// app.use("/api", require("./routes/api-routes.js"));
 app.use("/", require("./routes/html-routes.js"));
 
 
