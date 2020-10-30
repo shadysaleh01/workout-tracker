@@ -1,7 +1,8 @@
 
-# **workout-tracker**
+# **Workout-Tracker**
 
-[Full Demo Video](https://drive.google.com/file/d/1PeCQZWdkWzNymlY4rNAATNsekR5JvkUb/preview)
+- [Workout Traker - GitHub IO](https://shadysaleh01.github.io/workout-tracker/)
+
 
 ## Table of Contents
 - [Description](#description)
