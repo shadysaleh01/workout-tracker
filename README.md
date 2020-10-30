@@ -33,7 +33,10 @@
 
 ```
 ## Usage
-### Burger logger created by using MySQL, Node, Express, Handlebars and a homemade ORM.
+### The user should be able to:
+- Add exercises to a previous workout plan.
+- Add new exercises to a new workout plan.
+- View the combined weight of multiple exercises on the stats page.
 
 ## Tests
 ### To run tests, run the following command: 
