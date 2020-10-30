@@ -13,7 +13,7 @@
 - [Questions](#questions)
 
 ## Description
-### 
+### Application to view create and track daily workouts. Also to log multiple exercises in a workout on a given day. It should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, It should be able to track the distance traveled.
 
 ## Languages and Tools:
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
