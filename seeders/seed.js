@@ -1,8 +1,10 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://shady-saleh:0550836852Sh@Dy@cluster0.qg9qd.mongodb.net/workout_db?retryWrites=true&w=majority`, {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
 });
 
