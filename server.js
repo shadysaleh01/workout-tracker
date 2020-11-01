@@ -22,18 +22,30 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log(`Successfully connected to database: ${databaseName}`))
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://shady-saleh:0550836852Sh@Dy@cluster0.qg9qd.mongodb.net/workout?retryWrites=true&w=majority", {
+// mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://shady-saleh:0550836852Sh%40Dy@cluster0.qg9qd.mongodb.net/workout-db?retryWrites=true&w=majority", {
 //    useNewUrlParser: true,
 //    useUnifiedTopology: true,
 //    useCreateIndex: true,
 //    useFindAndModify: false
 // });
+
 // mongoose.connect(`mongodb+srv://shady-saleh:0550836852Sh@Dy@cluster0.qg9qd.mongodb.net/workout_db?retryWrites=true&w=majority`, {
 //    useNewUrlParser: true,
 //    useUnifiedTopology: true,
 //    useCreateIndex: true,
 //    useFindAndModify: false
 // })
+
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://shady-saleh:0550836852Sh%40Dy@cluster0.qg9qd.mongodb.net/workout-db?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//    const collection = client.db("test").collection("devices");
+//    // perform actions on the collection object
+//    client.close();
+// });
+
 
 // Requiring our routes
 
