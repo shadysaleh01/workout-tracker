@@ -20,7 +20,20 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://jamierachael:Cheeseme1@ds141924.mlab.com:41924/heroku_rp5k8lsz", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log(`Successfully connected to database: ${databaseName}`))
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log(`Successfully connected to database: ${databaseName}`))
+
+// mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://shady-saleh:0550836852Sh@Dy@cluster0.qg9qd.mongodb.net/workout?retryWrites=true&w=majority", {
+//    useNewUrlParser: true,
+//    useUnifiedTopology: true,
+//    useCreateIndex: true,
+//    useFindAndModify: false
+// });
+// mongoose.connect(`mongodb+srv://shady-saleh:0550836852Sh@Dy@cluster0.qg9qd.mongodb.net/workout_db?retryWrites=true&w=majority`, {
+//    useNewUrlParser: true,
+//    useUnifiedTopology: true,
+//    useCreateIndex: true,
+//    useFindAndModify: false
+// })
 
 // Requiring our routes
 

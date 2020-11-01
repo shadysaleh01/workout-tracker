@@ -3,7 +3,7 @@ const db = require("../models");
 
 // GET api to get workout 
 router.get("/workouts", (req, res) => {
-   db.Workout.find({})
+   db.Workout.find()
       .then(dbWorkout => {
          res.json(dbWorkout);
       })
@@ -15,6 +15,7 @@ router.get("/workouts", (req, res) => {
 // addExercise PUT /api/workouts/ 
 router.put("/workouts/:id", ({ params, body }, res) => {
    console.log(body);
+   console.log(params)
    db.Workout.findByIdAndUpdate(
       params.id,
       {
@@ -47,7 +48,7 @@ router.post("/workouts", ({ body }, res) => {
          res.json(err);
       });
 
-   res.send('Got a POST request')
+   //   res.send('Got a POST request')
 });
 
 // getWorkoutsInRange() GET /api/workouts/range
