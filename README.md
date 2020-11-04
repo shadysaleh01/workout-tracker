@@ -32,7 +32,7 @@
 ## Installation
 ### To install necessary dependencies, run the following command: 
 ```
-
+npm install || npm install express || npm install mongoose
 ```
 ## Usage
 ### The user should be able to:
@@ -43,7 +43,7 @@
 ## Tests
 ### To run tests, run the following command: 
  ``` 
-
+npm run start
  ```
 ## Questions
 ### If you have any questions about the repo, contact me directly at my [Email](mailto:shadysaleh01@gmail.com). You can find more of my work at my [GitHub](https://github.com/shadysaleh01).
